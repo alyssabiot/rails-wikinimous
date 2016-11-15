@@ -1,0 +1,16 @@
+<div class="form text-center">
+
+<%= form_for @article do |f| %>
+
+<div class="form-group">
+  <%= f.label :title, "Title" %>
+  <%= f.text_field :title %>
+</div>
+
+<div class="form-group">
+  <%= f.label :content, "Content" %>
+  <%= f.text_area :content, cols: 50, rows: 15 %>
+</div>
+  <%= f.submit %>
+<% end %>
+</div>
